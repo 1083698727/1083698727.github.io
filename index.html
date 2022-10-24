@@ -5,6 +5,34 @@
     <title></title>
 </head>
 <body>
-   <a>随便打个小啊黄</a>
+   <style>
+        body{
+            background-image: url(./image/4.png);
+            background-size:cover;
+        }
+        .parentDiv{
+            position:relative;
+        }
+        .div1{
+            position:absolute;
+            z-index:1;
+        }
+        .div2{
+            position:absolute;
+            top: 10px;
+            z-index:2;
+        }
+        .button1{
+	        background:transparent;	/*按钮背景透明*/
+        }
+    </style>
+    <form id="form1" runat="server">
+        <div>
+            <asp:HyperLink ID="HyperLink1" class="HyperLink1" runat="server" ForeColor="White">请输入你要殴打的人的姓名：</asp:HyperLink>
+            <asp:TextBox ID="TextBox1" runat="server" Width="111px"></asp:TextBox>
+            <asp:Button ID="Button1"  class="button1" runat="server" Text="开始殴打" ForeColor="#804000" BorderColor="#804000" OnClick="Button1_Click"/>
+            <asp:Label ID="Label1" runat="server" ForeColor="White"></asp:Label>
+        </div>
+    </form>
 </body>
 </html>
