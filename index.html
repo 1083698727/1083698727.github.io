@@ -8,7 +8,7 @@
 <body>
    <style>
         body{
-            background-image: url(./4.png);
+            background-image: url(./image/baack.png);
             background-size:cover;
         }
         .parentDiv{
@@ -27,12 +27,10 @@
 	        background:transparent;	/*按钮背景透明*/
         }
     </style>
-    <form id="form1" runat="server">
+    <form id="form1">
         <div>
             <a>请输入你要殴打的人的姓名：</a>
-            <asp:TextBox ID="TextBox1" runat="server" Width="111px"></asp:TextBox>
-            <asp:Button ID="Button1"  class="button1" runat="server" Text="开始殴打" ForeColor="#804000" BorderColor="#804000" OnClick="Button1_Click"/>
-            <asp:Label ID="Label1" runat="server" ForeColor="White"></asp:Label>
+            <input id="Text1" type="text" />
         </div>
     </form>
 </body>
