@@ -16,11 +16,10 @@
     <script>
         function confirm() {
             var cipher = document.getElementById("input1").value;
-            var text = document.getElementById("a1").value;
             if(cipher == "10.16")
                 window.location.href="dataName.html";
             else
-                text = "连暗号都不知道就别来了";
+                document.getElementById("a1").value = "连暗号都不知道就别来了";
                   
           }
       </script>
