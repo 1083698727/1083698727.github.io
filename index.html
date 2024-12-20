@@ -7,23 +7,22 @@
 		    <link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<audio id="background-music" src="bgm/卫兰 - 一格格_EM.flac" autoplay loop muted>
-		    您的浏览器不支持 audio 元素。
-		</audio>
-		<header>
-		         <div class="container">
-		                
-		                <button onclick="acceptLove()">接受</button>
-		            </div>
-		         
-		            <script>
-		                function acceptLove() {
-		                    alert("接受了");
-							    music.play("bgm/卫兰 - 一格格_EM.flac").catch(function(error) {
-							        console.log('播放失败:', error);
-									}
-		                    // 这里可以添加更多交互效果，比如跳转到另一个页面或显示更多内容
-		                }
-		            </script>
+		<h1>欢迎来到我的网站</h1>
+    <p>这个页面将在加载时自动播放背景音乐。</p>
+ 
+    <!-- 使用audio标签并设置autoplay属性 -->
+    <audio id="background-music" src="your-music-file.mp3" autoplay loop>
+        您的浏览器不支持audio标签。
+    </audio>
+ 
+    <script>
+        // JavaScript代码，确保在某些浏览器中也能自动播放（现代浏览器大多已经支持autoplay）
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(error => {
+                console.log('自动播放被阻止，请确保浏览器未禁用自动播放或手动播放音乐。', error);
+            });
+        });
+    </script>
 	</body>
 </html>
