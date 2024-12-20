@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My GitHub Page</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my GitHub Pages site.</p>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <title>个人博客</title>
+		    <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<audio id="background-music" src="bgm/卫兰 - 一格格_EM.flac" autoplay loop muted>
+		    您的浏览器不支持 audio 元素。
+		</audio>
+		<header>
+		         <div class="container">
+		                
+		                <button onclick="acceptLove()">接受</button>
+		            </div>
+		         
+		            <script>
+		                function acceptLove() {
+		                    alert("接受了");
+							    music.play("bgm/卫兰 - 一格格_EM.flac").catch(function(error) {
+							        console.log('播放失败:', error);
+									}
+		                    // 这里可以添加更多交互效果，比如跳转到另一个页面或显示更多内容
+		                }
+		            </script>
+	</body>
 </html>
